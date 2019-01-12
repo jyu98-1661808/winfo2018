@@ -29,6 +29,14 @@ body {
   background-color: #fdfcfd;
 }
 
+.nav-container {
+  background-color: #fdfcfd;
+  height: 25px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
 .about-header {
   color: #a89ed4;
 }
