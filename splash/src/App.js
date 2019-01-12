@@ -32,6 +32,9 @@ class Navigation extends Component {
               <NavLink href="#about-us">About Us</NavLink>
             </NavItem>
             <NavItem>
+              <NavLink href="#">Case Analysis</NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink href="#">Donate</NavLink>
             </NavItem>
           </Nav> 
