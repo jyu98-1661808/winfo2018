@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { UncontrolledCarousel } from 'reactstrap';
+import { Nav, NavItem, NavLink, UncontrolledCarousel } from 'reactstrap';
 import logo from './logo.svg';
 
 import './style.css';
@@ -34,11 +34,35 @@ class App extends Component {
         <div className="parallax">
           <p className="parallax-title text-center">splash<span className="blink">.</span></p>
         </div>
+        <Navigation />
         <AboutSplash />
         <Gallery />
         <AboutUs />
         <Footer />
       </div>
+    );
+  }
+}
+
+class Navigation extends Component {
+  render() {
+    return(
+        <div className="nav-container mx-auto py-5">
+          <Nav>
+            <NavItem>
+              <NavLink href="#about-splash">About Splash</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#about-us">About Us</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#">Case Analysis</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#">Donate</NavLink>
+            </NavItem>
+          </Nav> 
+        </div>
     );
   }
 }

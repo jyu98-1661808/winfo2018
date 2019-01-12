@@ -35,6 +35,19 @@ body {
   height: 350px;
 }
 
+.nav-container {
+  background-image: linear-gradient(to right, rgb(151, 152, 164),rgb(104, 119, 216), rgb(122, 43, 196));
+  height: 25px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.nav-link {
+  color: #fdfcfd;
+  font-size: 2rem;
+}
+
 .about-header {
   color: #a89ed4;
 }
