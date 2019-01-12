@@ -1,14 +1,39 @@
 import React, { Component } from 'react';
+import { UncontrolledCarousel } from 'reactstrap';
 import logo from './logo.svg';
 
 import './style.css';
 
+let items = [
+  {
+    src: './img/carousel1.png',
+    altText: 'Slide 1',
+    caption: 'Slide 1',
+    header: 'Slide 1 Header'
+  },
+  {
+    src: './img/carousel2.png',
+    altText: 'Slide 2',
+    caption: 'Slide 2',
+    header: 'Slide 2 Header'
+  },
+  {
+    src: './img/carousel3.png',
+    altText: 'Slide 3',
+    caption: 'Slide 3',
+    header: 'Slide 3 Header'
+  }
+];
+
+
 class App extends Component {
   render() {
     return (
-      <div className="Splash">
-        <div className="parallax"></div>
+      <div className="splash">
         <Header />
+        <div className="parallax">
+          <p className="parallax-title text-center">splash<span className="blink">.</span></p>
+        </div>
         <AboutSplash />
         <Gallery />
         <AboutUs />
@@ -21,8 +46,8 @@ class App extends Component {
 class Header extends Component {
   render() {
     return (
-      <header className="Splash-header">
-
+      <header className="splash-header">
+      
       </header>
     );
   }
@@ -34,7 +59,7 @@ class AboutSplash extends Component {
       <section id="about-splash">
         <div className="splash-container mx-auto my-5 py-5">
           <div className="w-75 mx-auto">
-            <h1 className="about-header">About Splash</h1>
+            <h1 className="about-header mb-3">About Splash</h1>
             <p className="about-text">
               Splash is a mobile app game that is designed to help end the water crisis and promote a healthier lifestyle for users through improving their water intake.
             <br></br>
@@ -59,7 +84,9 @@ class Gallery extends Component {
   render() {
     return (
       <section id="gallery">
-
+        <div className="w-75 mx-auto"> 
+          <UncontrolledCarousel className="my-5" items={items} />
+        </div>
       </section>
     );
   }
@@ -96,7 +123,7 @@ class Footer extends Component {
   render() {
     return (
       <section id="footer">
-        <p className="text-center my-4">
+        <p className="footer-text text-center my-4">
           website created by jiyun yu & jion yi using 
           <img className="footer-logo" src="img/react-logo.png" alt="react logo" />
         </p>

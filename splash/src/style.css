@@ -4,29 +4,35 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ffffff;
-  background-image: url('./background.jpeg');
-  /* min-height: 500px; */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #fdfcfd;
   color: #ffffff;
 }
 
-/* .parallax {
+.parallax {
   background-image: url('./background.jpeg');
-  min-height: 500px;
+  min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
+
+.parallax-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 5em;
+  padding-top: 45vh;
+}
+
+.blink {
+  animation: blink 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation: blink 1s;
+  -webkit-animation-iteration-count: infinite;
+}
 
 /* About Splash */
 .splash-container {
   height: 350px;
-  background-color: #fdfcfd;
 }
 
 .about-header {
@@ -40,6 +46,25 @@ body {
 /* Footer */
 .footer-logo {
   width: 2.5%;
+}
+
+/* Animation */
+@keyframes blink {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.footer-text {
+  background: -webkit-linear-gradient(rgb(248, 180, 250), rgb(191, 148, 227));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .App-logo {
