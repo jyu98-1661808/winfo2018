@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, NavItem, NavLink, NavbarBrand, UncontrolledCarousel } from 'reactstrap';
-import logo from './logo.svg';
-
+import { Nav, NavItem, NavLink, UncontrolledCarousel, Container, Col, Row, Button } from 'reactstrap';
 import './style.css';
 
 let items = [
@@ -57,6 +55,7 @@ class App extends Component {
         <AboutSplash />
         <Gallery />
         <AboutUs />
+        <Donate />
         <Footer />
       </div>
     );
@@ -83,6 +82,35 @@ class Navigation extends Component {
         </div>
       </header>
     );
+  }
+}
+
+class Donate extends Component {
+  render() {
+    return (
+      <section className="donate">
+        <div className="splash-container mx-auto my-5 py-5 w-75 mx-auto">
+        <h1 className="about-header mb-3">Donate</h1>
+          <p className="about-text">Help us bring equity to the world by donating. Here are different ways to donate:</p>
+          <Container>
+          ` <Row>
+              <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Start a fundraiser</Button></Col>
+              <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Shop our products</Button></Col>
+            </Row>
+            <br></br>
+            <Row>
+              <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Donate Online</Button></Col>
+              <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Donate via email or phone</Button></Col>              
+            </Row>
+            <br></br>
+            <Row>
+              <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Donate monthly</Button></Col>
+              <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Donate as an enterprise</Button></Col>
+            </Row>
+          </Container>
+        </div>
+      </section>
+    )
   }
 }
 
