@@ -12,8 +12,8 @@ Splash is a mobile app game that is designed to help end the water crisis and pr
 Our challenge is that the app has faced included where the source of funding would come from. Splash is planned to be marketed as a free downloadable game on any mobile application store. Hence, we are concerned with how the app would raise money to provide communities in need with clean water. We seek to tackle this challenge through sponsorship from notable water companies and organizations, such as Coca Cola, Glaceau Smartwater, Alliance for Water Stewardship, and Water.org. These are entities which have already been dedicated to addressing the global water crisis and share the same goal as ours. Working with them would resolve potential issues with lack of funds or awareness.
 
 ## References
-[1] https://water.org/our-impact/water-crisis/
-[2] World Health Organization and UNICEF Joint Monitoring Programme. (2017). 
-[3] Progress on Drinking Water and Sanitation, 2017 Update and MDG Assessment.
-[4] Hydration: Why it's so important. American Academy of Family Physicians. (2017). https://familydoctor.org/athletes-the-importance-of-good-hydration/. 
+[1] https://water.org/our-impact/water-crisis/ <br>
+[2] World Health Organization and UNICEF Joint Monitoring Programme. (2017). <br>
+[3] Progress on Drinking Water and Sanitation, 2017 Update and MDG Assessment. <br>
+[4] Hydration: Why it's so important. American Academy of Family Physicians. (2017). https://familydoctor.org/athletes-the-importance-of-good-hydration/. <br>
 [5] Sterns RH. Maintenance and replacement fluid therapy in adults. https://www.uptodate.com/contents/search. 
