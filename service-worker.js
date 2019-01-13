@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/jyu98-1661808/winfo2018/precache-manifest.2a8c9489ddaccf7b1484852f47e90c4c.js"
+  "/winfo2018/precache-manifest.1d43e6597380e891ac63f54a3193af09.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/jyu98-1661808/winfo2018/index.html", {
+workbox.routing.registerNavigationRoute("/winfo2018/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
