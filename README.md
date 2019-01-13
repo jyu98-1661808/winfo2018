@@ -1,4 +1,4 @@
-# Splash
+# Splash - A Mobile Game App for Water Equity
 Winfo Hackathon 2019
 Project by Jiyun Yu, Mina Kang, Yewon Lee, and Jion Yi
 
