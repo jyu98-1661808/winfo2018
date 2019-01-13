@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, NavItem, NavLink, UncontrolledCarousel } from 'reactstrap';
+import { Nav, NavItem, NavLink, NavbarBrand, UncontrolledCarousel } from 'reactstrap';
 import logo from './logo.svg';
 
 import './style.css';
@@ -34,10 +34,10 @@ class App extends Component {
   }
 
   listenScrollEvent = e => {
-    if (window.scrollY > 800) {
-      this.setState({color: 'nav-container-colored scrolled  pt-3'})
+    if (window.scrollY > 850) {
+      this.setState({color: 'nav-container-colored pt-3'});
     } else {
-      this.setState({color: 'nav-container my-4 ml-3'})
+      this.setState({color: 'nav-container my-4 ml-3'});
     }
   }
 
@@ -47,11 +47,12 @@ class App extends Component {
   render() {
     return (
       <div className="splash">
-        <Header />
-        <div className="parallax">
-          <img className="fish-logo d-block mx-auto" src="./img/splash-logo-fish.png" alt="fish logo" />
-          <p className="parallax-title text-center">splash<span className="blink">!</span></p>
-        </div>
+        <section id="hero">
+          <div className="parallax">
+            <img className="fish-logo d-block mx-auto" src="./img/splash-logo-fish.png" alt="fish logo" />
+            <p className="parallax-title text-center">splash<span className="blink">!</span></p>
+          </div>
+        </section>
         <Navigation color={this.state.color} />
         <AboutSplash />
         <Gallery />
@@ -64,20 +65,23 @@ class App extends Component {
 
 class Navigation extends Component {
   render() {
-    return(
+    return (
+      <header>
         <div className={this.props.color}>
-          <Nav className="ml-3">
+          <img className="fish-icon d-block px-3" src="./img/splash-logo-fish.png" alt="fish logo" />
+          <Nav>
             <NavItem>
               <NavLink href="#about-splash">About Splash</NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem >
               <NavLink href="#about-us">About Us</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#">Donate</NavLink>
             </NavItem>
-          </Nav> 
+          </Nav>
         </div>
+      </header>
     );
   }
 }
@@ -124,7 +128,7 @@ class Gallery extends Component {
     return (
       <section id="gallery">
         <div className="w-75 mx-auto"> 
-          <UncontrolledCarousel className="my-5" items={items} />
+          <UncontrolledCarousel className="my-5 carousel" items={items} />
         </div>
       </section>
     );

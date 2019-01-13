@@ -47,12 +47,6 @@ body {
   font-family: 'Press Start 2P', cursive;
 }
 
-.nav-container {
-  width: 100%;
-  position: fixed;
-  top: 0;
-}
-
 .nav-container-colored {
   width: 100%;
   height: 70px;
@@ -60,6 +54,7 @@ body {
   top: 0;
   background-image: linear-gradient(rgb(248, 180, 250), rgb(191, 148, 227), rgb(152, 148, 227));
   transition: background-image 200ms linear; 
+  z-index: 3;
 }
 
 .nav-item a:hover {
@@ -70,6 +65,12 @@ body {
 .nav-item a:active {
   text-decoration: underline;
   color: #ffffff;
+}
+
+.fish-icon {
+  padding: 7px;
+  float:left;
+  width: 4%;
 }
 
 /* About Splash */
@@ -85,9 +86,20 @@ body {
   color: #6a577c;
 }
 
+/* Carousel */
+.carousel {
+  position: relative;
+}
+
 /* Footer */
 .footer-logo {
   width: 2.5%;
+}
+
+.footer-text {
+  background: -webkit-linear-gradient(rgb(248, 180, 250), rgb(191, 148, 227));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Animation */
@@ -101,12 +113,6 @@ body {
   100% {
       opacity: 1;
   }
-}
-
-.footer-text {
-  background: -webkit-linear-gradient(rgb(248, 180, 250), rgb(191, 148, 227));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .App-logo {
