@@ -20,7 +20,6 @@ body {
 .parallax-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 5em;
-  padding-top: 45vh;
 }
 
 .blink {
@@ -30,14 +29,13 @@ body {
   -webkit-animation-iteration-count: infinite;
 }
 
-/* About Splash */
-.splash-container {
-  height: 350px;
+.fish-logo {
+  padding-top: 40vh;
+  width: 15%;
 }
 
+/* Navigation */
 .nav-container {
-  background-image: linear-gradient(to right, rgb(151, 152, 164),rgb(104, 119, 216), rgb(122, 43, 196));
-  height: 25px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -45,7 +43,38 @@ body {
 
 .nav-link {
   color: #fdfcfd;
-  font-size: 2rem;
+  font-size: 0.75em;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.nav-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.nav-container-colored {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  background-image: linear-gradient(rgb(248, 180, 250), rgb(191, 148, 227), rgb(152, 148, 227));
+  transition: background-image 200ms linear; 
+}
+
+.nav-item a:hover {
+  border-bottom: 5px solid currentColor;
+  color: #ffffff;
+}
+
+.nav-item a:active {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* About Splash */
+.splash-container {
+  height: 350px;
 }
 
 .about-header {

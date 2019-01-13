@@ -25,16 +25,34 @@ let items = [
   }
 ];
 
-
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      color: 'nav-container my-4 ml-3',
+    };
+  }
+
+  listenScrollEvent = e => {
+    if (window.scrollY > 800) {
+      this.setState({color: 'nav-container-colored scrolled  pt-3'})
+    } else {
+      this.setState({color: 'nav-container my-4 ml-3'})
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent);
+  }
   render() {
     return (
       <div className="splash">
         <Header />
         <div className="parallax">
-          <p className="parallax-title text-center">splash<span className="blink">.</span></p>
+          <img className="fish-logo d-block mx-auto" src="./img/splash-logo-fish.png" alt="fish logo" />
+          <p className="parallax-title text-center">splash<span className="blink">!</span></p>
         </div>
-        <Navigation />
+        <Navigation color={this.state.color} />
         <AboutSplash />
         <Gallery />
         <AboutUs />
@@ -47,16 +65,13 @@ class App extends Component {
 class Navigation extends Component {
   render() {
     return(
-        <div className="nav-container mx-auto py-5">
-          <Nav>
+        <div className={this.props.color}>
+          <Nav className="ml-3">
             <NavItem>
               <NavLink href="#about-splash">About Splash</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#about-us">About Us</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#">Case Analysis</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#">Donate</NavLink>
