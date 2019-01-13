@@ -41,6 +41,12 @@ body {
   top: 0;
 }
 
+.person-name {
+  font-size: 1em;
+  font-family: 'Press Start 2P';
+  color: rgb(191, 148, 227);
+}
+
 .nav-link {
   color: #fdfcfd;
   font-size: 0.75em;

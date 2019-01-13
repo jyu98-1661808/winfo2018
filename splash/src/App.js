@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, NavItem, NavLink, UncontrolledCarousel, Container, Col, Row, Button } from 'reactstrap';
+import { Nav, NavItem, NavLink, UncontrolledCarousel, Container, Col, Row, Button, Media} from 'reactstrap';
 import './style.css';
 
 let items = [
@@ -92,22 +92,24 @@ class Donate extends Component {
         <div className="splash-container mx-auto my-5 py-5 w-75 mx-auto">
         <h1 className="about-header mb-3">Donate</h1>
           <p className="about-text">Help us bring equity to the world by donating. Here are different ways to donate:</p>
-          <Container>
-          ` <Row>
-              <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Start a fundraiser</Button></Col>
-              <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Shop our products</Button></Col>
-            </Row>
-            <br></br>
-            <Row>
-              <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Donate Online</Button></Col>
-              <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Donate via email or phone</Button></Col>              
-            </Row>
-            <br></br>
-            <Row>
-              <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Donate monthly</Button></Col>
-              <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Donate as an enterprise</Button></Col>
-            </Row>
-          </Container>
+          <div>
+            <Container>
+            ` <Row>
+                <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Start a fundraiser</Button></Col>
+                <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Shop our products</Button></Col>
+              </Row>
+              <br></br>
+              <Row>
+                <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Donate Online</Button></Col>
+                <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Donate via email or phone</Button></Col>              
+              </Row>
+              <br></br>
+              <Row>
+                <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Donate monthly</Button></Col>
+                <Col xs="6"><Button style={{backgroundColor: 'rgb(191, 148, 227)'}} size="lg" block>Donate as an enterprise</Button></Col>
+              </Row>
+            </Container>
+          </div>
         </div>
       </section>
     )
@@ -174,7 +176,7 @@ class AboutUs extends Component {
               Splash is a mobile app game that is designed to help end the water crisis and promote a healthier lifestyle for users through improving their water intake.
             <br></br>
               The game’s goal is to take care of fish by maintaining the tank water’s purity and unlock new fish characters during this process.
-          </p>
+            </p>
             <p className="about-text">
               With water comes life. It is the main constituent of the Earth’s surface and in most living organisms.  However, almost 844 million people live without access to safe water.
               This means that nearly 1 in 9 individuals are unable to obtain this necessity (World Health Organization 2017).
@@ -182,7 +184,41 @@ class AboutUs extends Component {
               On the other hand, even those with access to water do not consume enough water for their health needs. A 2018 study states that 80% Americans drink less water than the recommended daily amount (Quench USA).
               Splash strives to tackle both of these problems by creating a fun and engaging experience. Its gameplay encourages users to drink water while giving support to the cause through donations.
               Therefore, Splash aims to bring equity and empower its users and the world as a whole.
-          </p>
+            </p>
+            <Container>
+              <Row>
+                <Col sm="6" md="3">
+                  <div>
+                    <h2 className="person-name">Yewon Lee</h2>
+                    <Media src="./img/yewon.png" alt="Yewon" height="150px" />
+                    <p className="about-text">lorem ipsum</p>
+                  </div>
+                </Col>
+                <Col sm="6" md="3">
+                  <div>
+                    <h2 className="person-name">Mina Kang</h2>
+                    <Media src="./img/mina.png" alt="Mina" height="150px" />
+                    <p className="about-text">lorem ipsum</p>
+                  </div>
+                </Col>
+                <Col sm="6" md="3">
+                  <div>
+                    <h2 className="person-name">Jiyun Yu</h2>
+                    <Media src="./img/jiyun.png" alt="Jiyun" height="150px" />
+                    <p className="about-text">lorem ipsum</p>
+                  </div>
+                </Col>
+                <Col sm="6" md="3">
+                  <div>
+                    <h2 className="person-name">Jion Yi</h2>
+                    <Media src="./img/jion.png" alt="Jion" height="150px" />
+                    <p className="about-text">lorem ipsum</p>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+            <br></br>
+            <br></br>
           </div>
         </div>
       </section>
